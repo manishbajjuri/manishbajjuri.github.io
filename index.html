@@ -1,0 +1,125 @@
+<html lang="en">
+<style>
+
+.card{
+ margin-bottom:30px;
+
+}
+
+.card:hover{
+     transform: scale(1.10);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+</style>
+
+
+
+
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color:#D4D2CC;">
+    <center>
+        <br>
+
+        <h2>
+            Welcome to Ml Project's
+        </h2>
+        <br>
+    </center>
+
+<div class="container border ">
+    <br>
+    <br>
+    <div class="row">
+
+        <div class="col-lg-3 mb-3">
+        <div class="card" style="width:250px" >
+            <img class="card-img-top" src="{{url_for('static', filename='iris.jpg')}}" width="250"  height="200">
+                <div class="card-body">
+                    <h4 class="card-title">IRIS Data</h4>
+                    <a href="{{url_for('irispage')}}" class="btn btn-outline-secondary">Predication -></a>
+                </div>
+        </div>
+        </div>
+
+        <div class="col-lg-3 mb-3">
+        <div class="card" style="width:250px">
+            <img class="card-img-top" src="{{url_for('static', filename='ktm.jpg')}}" width="250"  height="200">
+                <div class="card-body">
+                    <h4 class="card-title">KTM</h4>
+                    <a href="{{url_for('ktm')}}" class="btn btn-outline-secondary">Predication -></a>
+                </div>
+        </div>
+        </div>
+
+        <div class="col-lg-3 mb-3">
+        <div class="card" style="width:250px">
+            <img class="card-img-top" src="{{url_for('static', filename='diabetes.jpg')}}" width="250"  height="200">
+                <div class="card-body">
+                    <h4 class="card-title">Diabetes</h4>
+                    <a href="{{url_for('abc')}}" class="btn btn-outline-secondary">Predication -></a>
+                </div>
+        </div>
+        </div>
+
+        <div class="col-lg-3 mb-3">
+        <div class="card" style="width:250px">
+            <img class="card-img-top" src="{{url_for('static', filename='redwine.jpg')}}" width="250"  height="200">
+                <div class="card-body">
+                    <h4 class="card-title">Red Wine Quality</h4>
+                    <a href="{{url_for('redwine')}}" class="btn btn-outline-secondary">Predication -></a>
+                </div>
+        </div>
+        </div>
+
+
+        <div class="col-lg-3 mb-3">
+        <div class="card" style="width:250px">
+            <img class="card-img-top" src="{{url_for('static', filename='iris.jpg')}}" width="250"  height="200">
+                <div class="card-body">
+                    <h4 class="card-title">IRIS Data</h4>
+                    <a href="{{url_for('abc')}}" class="btn btn-outline-secondary">Predication -></a>
+                </div>
+        </div>
+        </div>
+
+        <div class="col-lg-3 mb-3">
+        <div class="card" style="width:250px">
+            <img class="card-img-top" src="{{url_for('static', filename='iris.jpg')}}" width="250"  height="200">
+                <div class="card-body">
+                    <h4 class="card-title">KTM</h4>
+                    <a href="{{url_for('abc')}}" class="btn btn-outline-secondary">Predication -></a>
+                </div>
+        </div>
+
+        </div>
+        <div class="col-lg-3 mb-3">
+        <div class="card" style="width:250px">
+            <img class="card-img-top" src="{{url_for('static', filename='iris.jpg')}}" width="250"  height="200">
+                <div class="card-body">
+                    <h4 class="card-title">Diabetes</h4>
+                    <a href="{{url_for('abc')}}" class="btn btn-outline-secondary">Predication -></a>
+                </div>
+        </div>
+        </div>
+
+        <div class="col-lg-3 mb-3">
+        <div class="card" style="width:250px">
+            <img class="card-img-top" src="{{url_for('static', filename='iris.jpg')}}" width="250"  height="200">
+                <div class="card-body">
+                    <h4 class="card-title">heart attack</h4>
+                    <a href="{{url_for('abc')}}" class="btn btn-outline-secondary">Predication -></a>
+                </div>
+        </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
