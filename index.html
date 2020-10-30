@@ -1,183 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>iris</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</head>
-
-
-
-<body style="background-color:#;">
-
-<br>
-<br>
-
-<div class="container">
-<nav class="navbar navbar-expand-lg navbar-light bg-light ">
-    <h3>Iris Data predication using machine learning alogorithms</h3>
-    <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="nav navbar-nav ml-auto">
-      <li class="nav-item active">
-      <a class="nav-link" href="{{url_for('home')}}" >HOME</a>
-      </li>
-    </ul>
-  </div>
-
-</nav>
-</div>
-<br>
-
-<!-- body -->
-
-<div class="container">
-<div class="row" >
-<!-- Section Titile -->
-<div class="col-md-8 wow animated fadeInLeft" data-wow-delay=".2s">
-<div class="container border  pt-4 ">
-<p align="justify">
-<b><h3>IRIS is data which is available on sklearn.
-<br>
-It is classification based problem.</h3></b>
-<br>
-<h4><b>Features :</b></h4>
-1. Sepal length in cm
-<br>
-2. Sepal width in cm
-<br>
-3. Petal length in cm
-<br>
-4. Petal width in cm
-<br>
-<br>
-<h4><b>Class: </b></h4>
-1 - Iris Setosa
-<br>
-2 - Iris Versicolour
-<br>
-3 - Iris Virginica
-<br><br>
-Number of record's in the data is 150.<br>
-This 150 records are spited into train data and test data by 70:30 ratio.<br>
-Then 105 record's will be train data and remaining 45 are test data.<br>
-As the Size of the Data set is very less(150 records). Applying Cross Validation can make the model to perform better.<br>
-This data is trained on different Machine learning classifier algorithm.
-<br>
-Performance of all algorithms are listed below.
-<br>
-<br>
-
- <div class="container">
- <table class="table table-striped">
-  <thead>
-    <tr class="text-xs-center">
-      <th scope="col"></th>
-      <th scope="col">Algorithm</th>
-      <th scope="col">Accuracy</th>
-      <th scope="col">Cross Validation</th>
-    </tr>
-  </thead>
-  <tbody class="text-xs-center">
-    <tr>
-      <th scope="row">1</th>
-      <td>Logistic Regression</td>
-      <td>96.6</td>
-      <td>97.3</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Decision Trees</td>
-      <td>96.6</td>
-      <td>95.30</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Random Forest</td>
-      <td>96.6</td>
-      <td>96.5</td>
-    </tr>
-  <tr>
-      <th scope="row">4</th>
-      <td>AdaBoost</td>
-      <td>96.6</td>
-      <td>95.34</td>
-    </tr>
-  <tr>
-      <th scope="row">5</th>
-      <td>Gradient Boost</td>
-      <td>98.3</td>
-      <td>96.0</td>
-    </tr>
-  <tr>
-      <th scope="row">6</th>
-      <td>XGBoost</td>
-      <td>96.6</td>
-      <td>96.0</td>
-    </tr>
-  </tbody>
-</table>
-     <br>
-<p> By observing above accuracy table we can easily conclude that Logistic Regression is performing better result with 97.3 accuracy compare to all different classifiers.</p>
-
-     </div>
-    <br>
-    <br>
-
-
-
-
-</p>
-</div>
-</div>
-<!-- Predict  form -->
-              <div class="col-md-4 wow animated fadeInRight" data-wow-delay=".2s">
-                <div class="container border  pt-4 ">
-
-                  <img src="{{url_for('static', filename='iris.jpg')}}" width="320" height="320">
+   <head>
+      <meta charset="UTF-8">
+      <title>online test</title>
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   </head>
+   <body style="background-color:#">
+      <br><br>
+      <div class="container">
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <h3>Iris Data predication using machine learning alogorithms</h3>
+            <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="nav navbar-nav ml-auto">
+                  <li class="nav-item active"><a class="nav-link" href="{{url_for('home')}}">HOME</a></li>
+               </ul>
+            </div>
+         </nav>
+      </div>
+      <br>
+      <div class="container">
+         <div class="row">
+            <div class="col-md-8 wow animated fadeInLeft" data-wow-delay=".2s">
+               <div class="container border pt-4">
+                  <p align="justify">
+                     <b>
+                  <h3>IRIS is data which is available on sklearn.<br>It is classification based problem.</h3></b><br>
+                  <h4><b>Features :</b></h4>
+                  1. Sepal length<br>&emsp;&emsp;DataType : Float and Data Range 3.5 - 8.0<br>2. Sepal width<br>&emsp;&emsp;DataType : Float and Data Range 2.0 - 5.0<br>3. Petal length<br>&emsp;&emsp;DataType : Float and Data Range 1.0 - 7.0<br>4. Petal width<br>&emsp;&emsp;DataType : Float and Data Range 0.1 - 2.8<br><br>
+                  <h4><b>Target Class:</b></h4>
+                  1 - Iris Setosa<br>&emsp;&emsp;Class : 0<br>2 - Iris Versicolour<br>&emsp;&emsp;Class : 1<br>3 - Iris Virginica<br>&emsp;&emsp;Class : 2<br><br>
+                  <h4><b>Description</b></h4>
+                  Number of record's in the data is 150.<br>This 150 records are spited into train data and test data by 70:30 ratio.<br>Then 105 record's will be train data and remaining 45 are test data.<br>As the Size of the Data set is very less(150 records). Applying Cross Validation can make the model to perform better.<br>This data is trained on different Machine learning classifier algorithm.<br>Performance of all algorithms are listed below.<br><br>
+                  <div class="container">
+                     <table class="table table-striped">
+                        <thead>
+                           <tr class="text-xs-center">
+                              <th scope="col"></th>
+                              <th scope="col">Algorithm</th>
+                              <th scope="col">Accuracy</th>
+                              <th scope="col">Cross Validation</th>
+                           </tr>
+                        </thead>
+                        <tbody class="text-xs-center">
+                           <tr>
+                              <th scope="row">1</th>
+                              <td>Logistic Regression</td>
+                              <td>96.6</td>
+                              <td><b>97.3</b></td>
+                           </tr>
+                           <tr>
+                              <th scope="row">2</th>
+                              <td>Decision Trees</td>
+                              <td>96.6</td>
+                              <td>95.30</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">3</th>
+                              <td>Random Forest</td>
+                              <td>96.6</td>
+                              <td>96.5</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">4</th>
+                              <td>AdaBoost</td>
+                              <td>96.6</td>
+                              <td>95.34</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">5</th>
+                              <td>Gradient Boost</td>
+                              <td>98.3</td>
+                              <td>96.0</td>
+                           </tr>
+                           <tr>
+                              <th scope="row">6</th>
+                              <td>XGBoost</td>
+                              <td>96.6</td>
+                              <td>96.0</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <br>
+                  </div>
                   <br>
+                  <p>By observing above accuracy table we can easily conclude that Logistic Regression is performing better result with 97.3 accuracy compare to all different classifiers.</p>
+                  <h5><a href="https://github.com/manishbajjuri/portfolio/blob/main/iris%20portfolio.ipynb">Download Code</a></h5>
+                  <br>
+               </div>
+            </div>
+            <div class="col-md-4 wow animated fadeInRight" data-wow-delay=".2s">
+               <div class="container border pt-4">
+                  <img src="bg.jpg" width="300" height="320"><br><br>
+                  <h5><b>Enter the following details to get Prediction</b></h5>
                   <br>
                   <form class="shake" action="{{url_for('iris')}}" method="post" data-toggle="validator">
-                      <!-- Name -->
-                      <div class="form-group label-floating">
-                        <label class="control-label" >Enter Sepal Length:</label>
-                        <input class="form-control" type="text" step="0.01" name="sepal_length"  placeholder=" Enter in between 3.5 - 8.0" required>
+                     <div class="form-group label-floating">
+                        <label class="control-label">Sepal Length:</label><input class="form-control" step="0.01" name="sepal_length" placeholder=" Enter in between 3.5 - 8.0" required>
                         <div class="help-block with-errors"></div>
-                      </div>
-                      <!-- email -->
-                      <div class="form-group label-floating">
-                        <label class="control-label" >Enter Sepal Width :</label>
-                        <input class="form-control" type="text" step="0.01" name="sepal_width"  placeholder=" Enter in between 2.0 - 5.0" required>
+                     </div>
+                     <div class="form-group label-floating">
+                        <label class="control-label">Sepal Width :</label><input class="form-control" step="0.01" name="sepal_width" placeholder=" Enter in between 2.0 - 5.0" required>
                         <div class="help-block with-errors"></div>
-                      </div>
-                      <!-- Subject -->
-                      <div class="form-group label-floating">
-                        <label class="control-label">Enter Petal Length:</label>
-                        <input class="form-control" type="text" step="0.01" name="petal_length"  placeholder=" Enter in between 1.0 - 7.0" required>
+                     </div>
+                     <div class="form-group label-floating">
+                        <label class="control-label">Petal Length:</label><input class="form-control" step="0.01" name="petal_length" placeholder=" Enter in between 1.0 - 7.0" required>
                         <div class="help-block with-errors"></div>
-                      </div>
-                      <!-- Message -->
-                      <div class="form-group label-floating">
-                          <label>Enter Petal Width : </label>
-                          <input class="form-control" type="text" step="0.01" name="petal_width"   placeholder=" Enter in between 0.1 - 2.8" required>
-                          <div class="help-block with-errors"></div>
-                      </div>
-                      <!-- Form Submit -->
-                      <div class="form-submit mt-5">
-                          <button type="submit" class="btn btn-secondary">Predict</button>
-                          <div id="msgSubmit" class="h3 text-center hidden"></div>
-                          <div class="clearfix"></div>
-                      </div>
+                     </div>
+                     <div class="form-group label-floating">
+                        <label class="control-label">Petal Width :</label><input class="form-control" step="0.01" name="petal_width" placeholder=" Enter in between 0.1 - 2.8" required>
+                        <div class="help-block with-errors"></div>
+                     </div>
+                     <div class="form-submit mt-5">
+                        <button type="submit" class="btn btn-secondary">Predict</button>
+                        <div id="msgSubmit" class="h3 text-center hidden"></div>
+                        <div class="clearfix"></div>
+                     </div>
                   </form>
+                  <br>
 
-<br>
-<p align="justify">
-<center><h1>
-{{prediction_text}}
-</h1></center>
-</p> <br> <br> </div> </div> </div></div><br><br></div>
-</body>
+                  <center>
+                     <h1>{{prediction_text}}</h1>
+                  </center>
+                 <br><br>
+               </div>
+            </div>
+         </div>
+      </div>
+      <br><br>
+   </body>
 </html>
